@@ -1,4 +1,4 @@
-let mySong;
+let MySong;
 let canvas;
 
 async function setup() {
@@ -8,7 +8,7 @@ async function setup() {
   angleMode(DEGREES);
   noStroke();
 
-  mySong = await loadSound('./assets/bg1.mp3');
+  MySong = await loadSound('./assets/bg1.mp3');
 
 }
 
@@ -17,10 +17,10 @@ function draw() {
 }
 
 function mousePressed() {
-  if(mySong.isPlaying()) {
-    mySong.stop();
+  if(MySong.isPlaying()) {
+    MySong.stop();
   }
   else {
-    mySong.start();
+    MySong.start();
   }
 }
