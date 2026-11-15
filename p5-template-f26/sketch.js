@@ -8,7 +8,7 @@ async function setup() {
   angleMode(DEGREES);
   noStroke();
 
-  mySong = await loadSound('/assets/mySong.mp3');
+  mySong = await loadSound('/Assets/mySong.mp3');
 
 }
 
